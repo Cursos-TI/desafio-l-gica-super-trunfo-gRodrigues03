@@ -219,8 +219,16 @@ int main() {
 
     printf("- Super poder: %f\n", super_poder2);
 
-    printf("\n///------------------------------------------------///\n\n");
-    printf("Contagem de pontos:\n");
+    //printf("\n///------------------------------------------------///\n\n");
+    //printf("Contagem de pontos:\n");
+
+    int comando;
+    do {
+        printf("%d", comando);
+        scanf("%d", &comando);
+
+    } while (comando != 1);
+    
 
     // Cálculo de pontos das cartas:
     printf("População da carta ");
