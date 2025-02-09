@@ -222,12 +222,19 @@ int main() {
     //printf("\n///------------------------------------------------///\n\n");
     //printf("Contagem de pontos:\n");
 
-    int comando;
+    int comando = 0;
     do {
-        printf("%d", comando);
-        scanf("%d", &comando);
-
-    } while (comando != 1);
+        switch (comando)
+        {
+        case 2:
+            /* code */
+            break;
+        default:
+            printf("Digite um comando:");
+            scanf("%d", &comando);
+            break;
+        }
+    } while (comando != 99);
     
 
     // Cálculo de pontos das cartas:
